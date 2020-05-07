@@ -5,6 +5,14 @@ email, or any other method with the owners of this repository before making a ch
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
+## Developing Project
+You consider contributing to this project – thank you! Please consider these guidelines when creating a commit:
+
+1. The commit message should flow the convention - we use commitzen to handle this, ensure it's installed before you proceed. 
+2. Appropiate terminology should be choosen for the representing the commit ( feat, fix, refactor, chore etc.)
+3. The commit message should be brief & verbose.
+4. Features and bug fixes should be covered by test cases ( No PR will be merged without them ! )
+
 ## Pull Request Process
 
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
