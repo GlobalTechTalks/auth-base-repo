@@ -1,0 +1,18 @@
+{
+  "name": "auth-base-repo",
+  "version": "1.0.0",
+  "dependencies": {
+    "crypto-random-string": "^3.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.15",
+    "nodemailer": "^6.4.6",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "bcrypt": "^4.0.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
