@@ -36,10 +36,15 @@ The form includes the following fields:
 
 ### Things to take care of
 There are some cases which we need to handle:
-
-- [ ] If a user directly tries to login via social media login method, s/he is allowed to do that & we redirect them to profile page.
-- [ ] The user should not be able to reset password more than 5 times in a day.
-- [ ] The user will not be able to login for next 15 minutes after 5 consecutive failed login attempts.
+- Code Level:
+ - [ ] If a user directly tries to login via social media login method, s/he is allowed to do that & we redirect them to profile page.
+ - [ ] The user should not be able to reset password more than 5 times in a day.
+ - [ ] The user will not be able to login for next 15 minutes after 5 consecutive failed login attempts.
+ - [ ] If things are getting repeated, try considering them to moving them into generic form and using them from a common location ( eg. common, utils, constants etc)
+ - [ ] A function should do only & only one thing ( except a few places, if its validating something, it should validate only & not add userId or any other param to the body )  
+- Project Level:
+ - [ ] Read the config from .env file
+ - [ ] Have a separate utils folder wherein all utils are present ( different project structures will use different location where utils will be found, for eg. inside src folder in react while in root folder in node )
 
 Basic features & cases such as - strong password meter, sign up via same email id / phone number not allowed - are to covered along. 
 
