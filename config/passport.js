@@ -1,7 +1,12 @@
 const passport = require("passport");
 //const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const jwt = require("jsonwebtoken");
-var JWTKEY = require("../keys").JWT_SECRET;
+const dotenv = require("dotenv");
+
+dotenv.config();
+const JWTKEY = process.env.JWT_SECRET
+
+
 const mongoose = require("mongoose");
 const passportJWT = require("passport-jwt");
 //const clientid = require('../keys').google.clientID

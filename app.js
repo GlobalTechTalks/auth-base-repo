@@ -1,24 +1,20 @@
 const express = require("express");
 const app = express();
-const mongoose = require("mongoose");
 app.use(express.json());
-const MONGOURI = require("./keys").MONGOURI;
+const dotenv = require("dotenv");
+
+dotenv.config();
+const MY_PORT = process.env.PORT;
+const MY_APP_SECRET = process.env.APP_SECRET;
 require("./Models/User");
+
+
 const passportsetup = require("./config/passport");
+const mongo = require('./config/Mongocoonection')
+mongo()
 
-mongoose.connect(MONGOURI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
 
-mongoose.connection.on("connected", () => {
-  console.log("mongoose connected");
-});
-
-mongoose.connection.on("error", () => {
-  console.log("error connecting");
-});
 app.use(require("./Routes/auth"));
-app.listen(3000, () => {
-  console.log("listeming on 3000");
+app.listen(MY_PORT, () => {
+  console.log(`listeming on ${MY_PORT}`);
 });
