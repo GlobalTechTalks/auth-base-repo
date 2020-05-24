@@ -1,6 +1,12 @@
 /workspace.xml
 node_modules/
 .idea
+passport.js
+database.js
+.eslintrc.json
+.prettier.json
+keys.js
+
 .DS_Store
 .AppleDouble
 .LSOverride
