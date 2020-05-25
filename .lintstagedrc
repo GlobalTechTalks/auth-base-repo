@@ -1,0 +1,8 @@
+{
+  "*.js": [
+    "pretty-quick --staged",
+    "eslint server/ --fix",
+    "git add",
+    "eslint --fix"
+  ],
+}
