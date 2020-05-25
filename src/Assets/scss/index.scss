@@ -1,0 +1,13 @@
+@import './colors.scss';
+@import './common.scss';
+@import './dependentAnims.scss';
+
+.general-card {
+	background-color: $white;
+	border-radius: 10px;
+}
+.input {
+	border: none;
+	outline: none;
+	border-bottom: 2px solid $purple;
+}

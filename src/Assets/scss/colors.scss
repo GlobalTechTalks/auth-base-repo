@@ -1,0 +1,37 @@
+$white: #FFFFFF;
+$ghostWhite: #F7F7FF;
+$purple: #88498F;
+$silverpink: #BFACAA;
+$black: #02020A;
+
+.fontColorBlack {
+	color: $black;
+}
+
+.fontColorWhite {
+	color: $white;
+}
+
+.fontColorPurple {
+	color: $purple;
+}
+
+.backgroundColorWhite {
+	background-color: $white;
+}
+
+.backgroundColorPurple {
+	background-color: $purple
+}
+
+.backgroundColorGhostWhite {
+	background-color: $ghostWhite
+}
+
+.backgroundColorSilverpink {
+	background-color: $purple
+}
+
+.backgroundColorBlack {
+	background-color: $purple
+}
