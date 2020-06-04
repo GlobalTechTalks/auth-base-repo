@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Granim from 'react-granim'
 import { Card, Heading, Input, Button } from '../Components'
 
@@ -16,9 +17,13 @@ export const Register = () => {
 						<Input label='Password' onChange={(value) => console.log(value)} />
 						<Input label='Mobile' onChange={(value) => console.log(value)} />
 					</div>
+
 					<div className='flexRow justifyCenter' >
 						<Button defaultText='Sign Up' />
-						<Button defaultText='No Thanks' />
+					</div>
+
+					<div className='flexRow justifyCenter' >
+						Already a Member? &nbsp; <Link to="/">Sign in here</Link>
 					</div>
 				</Card>
 			</div>
