@@ -6,6 +6,17 @@ export const Input = (props) => {
 			<div className='inputContainer margin10' >
 				<div className="label marginHorizontal10">{props.label}</div>
 				<input type="text" className='input' onChange={event => props.onChange(event.target.value)} className='input padding5 marginBottom10 marginLeft10 font18 width30v' />
+				<div className="inputErrorContainer">
+					{
+						(props.errors && props.errors.length)
+						?
+						props.errors.map(error => (
+							<div>{error}</div>
+						))
+						:
+						null
+					}
+				</div>
 			</div>
 		</>
 	)

@@ -1,22 +1,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Granim from 'react-granim'
 
-import { Register, Signin } from './Screens'
+import { Signup, Signin } from './Modules'
 import './Assets/scss/index.scss'
 
 function App() {
   return (
-  	<Router>
-  		<Switch>
-			<Route path='/register'>
-				<Register />
-			</Route>
+	<>  
+		<Granim id="granim"></Granim>	
+	  	<Router>
+	  		<Switch>
+				<Route path='/register'>
+					<Signup />
+				</Route>
 
-			<Route path='/'>
-				<Signin />
-			</Route>
-  		</Switch>
-  	</Router>
+				<Route path='/'>
+					<Signin />
+				</Route>
+	  		</Switch>
+	  	</Router>
+	</>
   );
 }
 
